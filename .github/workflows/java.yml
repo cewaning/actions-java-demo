@@ -11,8 +11,9 @@ steps:
 - name: Set up Java
 uses: actions/setup-java@v4
 with:
-distribution: temurin
 java-version: '17'
+distribution: temurin
+cache: maven
 - name: Compile
 run: javac Hello.java
 - name: Run
